@@ -33,7 +33,16 @@
     const hay = name + "\n" + desc + "\n" + tagStr;
     const passSearch = q ? hay.includes(q) : true;
     const tagArr = tagStr.split(',').map(s=>s.trim()).filter(Boolean);
-    const passTags = tags.size ? tagArr.some(t => tags.has(t)) : true;
+    // Case-insensitive check for tags
+    const passTags = tags.size 
+      ? tagArr.some(cardTag => {
+          // Check if any selected tag matches this cardTag (ignoring case)
+          for (let selTag of tags) {
+            if (selTag.toLowerCase() === cardTag) return true;
+          }
+          return false;
+        }) 
+      : true;
     return passSearch && passTags;
   }
 
