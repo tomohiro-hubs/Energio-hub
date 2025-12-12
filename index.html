@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Energio Tool Hub</title>
+  <meta name="description" content="太陽光設計ツール集のハブ（静的HTML+CSS版）" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/static-filter.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="brand">Energio Tool Hub</a>
+      <nav class="nav">
+        <a href="#" id="aboutLink">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container">
+    <h1>太陽光設計ツール集</h1>
+    <p>回路・PR・温度補正・設置間隔。目的別に最短でアクセス。</p>
+  </section>
+
+  <!-- Controls -->
+  <section class="controls container">
+    <div>
+      <label for="search" class="sr-only">検索</label>
+      <input id="search" type="text" class="search-input" placeholder="検索（名称・説明・タグ）" />
+    </div>
+    <div class="tag-list" id="tagList">
+      <button type="button" class="tag" data-tag="回路設計">回路設計</button>
+      <button type="button" class="tag" data-tag="ストリング">ストリング</button>
+      <button type="button" class="tag" data-tag="レイアウト">レイアウト</button>
+      <button type="button" class="tag" data-tag="PR">PR</button>
+      <button type="button" class="tag" data-tag="解析">解析</button>
+      <button type="button" class="tag" data-tag="CSV">CSV</button>
+      <button type="button" class="tag" data-tag="温度補正">温度補正</button>
+      <button type="button" class="tag" data-tag="Voc">Voc</button>
+      <button type="button" class="tag" data-tag="設計">設計</button>
+      <button type="button" class="tag" data-tag="設置間隔">設置間隔</button>
+      <button type="button" class="tag" data-tag="影">影</button>
+      <button type="button" class="tag" data-tag="方位角">方位角</button>
+    </div>
+  </section>
+
+  <div class="selected-tags container" id="selectedTags"></div>
+
+  <!-- Card Grid -->
+  <main class="grid container">
+
+    <!-- Card 1 -->
+    <a class="card" href="./SolarCircuitDesigner/" role="link" data-name="SolarCircuitDesigner" data-tags="回路設計,ストリング,レイアウト" data-desc="太陽光発電所の回路設計を高速化する割付ツール ストリング構成 直並列 設計 手戻り">
+      <div class="card-badge-row">
+        <span class="badge">設計</span>
+        <span class="updated">最終更新: 2025-12-01</span>
+      </div>
+      <h3>SolarCircuitDesigner</h3>
+      <p class="headline">太陽光発電所の回路設計を高速化する割付ツール</p>
+      <p class="desc line-clamp-3">ストリング構成・直並列の検討をカードUIで整理し、設計の手戻りを減らす。</p>
+      <div class="card-tags">
+        <span class="tag-chip">回路設計</span>
+        <span class="tag-chip">ストリング</span>
+        <span class="tag-chip">レイアウト</span>
+      </div>
+      <div class="card-footer">
+        <button class="icon-btn" aria-label="お気に入り">★</button>
+        <span class="cta">開く
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a class="card" href="./PRanalyzerVer1/" role="link" data-name="PRanalyzerVer1" data-tags="PR,解析,CSV" data-desc="PR値 データ 性能低下 早期発見 日別 区画別 異常値 可視化">
+      <div class="card-badge-row">
+        <span class="badge">解析</span>
+        <span class="updated">最終更新: 2025-12-04</span>
+      </div>
+      <h3>PRanalyzerVer1</h3>
+      <p class="headline">PR値をデータから算出し、性能低下の兆候を早期発見</p>
+      <p class="desc line-clamp-3">日別・区画別のPRを整理して、異常値や比較対象のブレを見える化する。</p>
+      <div class="card-tags">
+        <span class="tag-chip">PR</span>
+        <span class="tag-chip">解析</span>
+        <span class="tag-chip">CSV</span>
+      </div>
+      <div class="card-footer">
+        <button class="icon-btn" aria-label="お気に入り">★</button>
+        <span class="cta">開く
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- Card 3 -->
+    <a class="card" href="./PVStringDesigner/" role="link" data-name="PVStringDesigner" data-tags="温度補正,Voc,設計" data-desc="ストリング 回路 温度補正 低温時Voc 温度係数 直列枚数 過電圧 リスク">
+      <div class="card-badge-row">
+        <span class="badge">設計</span>
+        <span class="updated">最終更新: 2025-12-05</span>
+      </div>
+      <h3>PVStringDesigner</h3>
+      <p class="headline">ストリング回路と温度補正を同時に検討する設計支援</p>
+      <p class="desc line-clamp-3">低温時Voc・温度係数・直列枚数の整合を一画面で検証し、過電圧リスクを潰す。</p>
+      <div class="card-tags">
+        <span class="tag-chip">温度補正</span>
+        <span class="tag-chip">Voc</span>
+        <span class="tag-chip">設計</span>
+      </div>
+      <div class="card-footer">
+        <button class="icon-btn" aria-label="お気に入り">★</button>
+        <span class="cta">開く
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- Card 4 -->
+    <a class="card" href="./RowSpacingPlanner/" role="link" data-name="RowSpacingPlanner" data-tags="設置間隔,影,方位角" data-desc="影 方位 設置間隔 標準化 傾斜 高さ 方位角 影長 最小列間隔">
+      <div class="card-badge-row">
+        <span class="badge">設計</span>
+        <span class="updated">最終更新: 2025-12-08</span>
+      </div>
+      <h3>RowSpacingPlanner</h3>
+      <p class="headline">影と方位を踏まえた設置間隔の設計を標準化</p>
+      <p class="desc line-clamp-3">傾斜・高さ・方位角を前提に、影長と最小列間隔の判断を再現可能にする。</p>
+      <div class="card-tags">
+        <span class="tag-chip">設置間隔</span>
+        <span class="tag-chip">影</span>
+        <span class="tag-chip">方位角</span>
+      </div>
+      <div class="card-footer">
+        <button class="icon-btn" aria-label="お気に入り">★</button>
+        <span class="cta">開く
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+      </div>
+    </a>
+
+  </main>
+
+  <footer class="footer container">Energio Tool Hub - 太陽光設計ツールのWebポータル</footer>
+
+  <!-- About Modal -->
+  <div id="aboutModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="aboutTitle" aria-describedby="aboutDesc">
+      <button class="modal-close" id="aboutClose" aria-label="閉じる">×</button>
+      <h2 id="aboutTitle">このサイトについて</h2>
+      <p id="aboutDesc">Energio Tool Hub は、太陽光発電の設計業務を効率化するツールをまとめた「Webポータルサイト」です。目的のカードを選ぶだけで、すぐに専用ツールを利用できます。</p>
+      <ul class="modal-list">
+        <li><strong>インストール不要：</strong>すべてのツールはブラウザ上ですぐに動作します。</li>
+        <li><strong>登録不要：</strong>面倒な会員登録やログインはありません。</li>
+        <li><strong>サクサク検索：</strong>キーワードを入れるだけで、瞬時にツールを絞り込めます。</li>
+      </ul>
+      <p class="modal-note">※入力したデータがサーバーに保存されることはありません。</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+  "site": {
+    "title": "Energio Tool Hub",
+    "subtitle": "回路・PR・温度補正・設置間隔を、目的別に最短アクセス",
+    "footerNote": "本ページはGitHub Pages上の静的リンク集です。"
+  },
+  "apps": [
+    {
+      "id": "solar-circuit-designer",
+      "name": "SolarCircuitDesigner",
+      "headline": "太陽光発電所の回路設計を高速化する割付ツール",
+      "shortDescription": "ストリング構成・直並列の検討をカードUIで整理し、設計の手戻りを減らす。",
+      "tags": ["回路設計", "ストリング", "レイアウト"],
+      "badge": "設計",
+      "href": "./SolarCircuitDesigner/",
+      "external": false,
+      "order": 10,
+      "updatedAt": "2025-12-01"
+    },
+    {
+      "id": "pr-analyzer-ver1",
+      "name": "PRanalyzerVer1",
+      "headline": "PR値をデータから算出し、性能低下の兆候を早期発見",
+      "shortDescription": "日別・区画別のPRを整理して、異常値や比較対象のブレを見える化する。",
+      "tags": ["PR", "解析", "CSV"],
+      "badge": "解析",
+      "href": "./PRanalyzerVer1/",
+      "external": false,
+      "order": 20,
+      "updatedAt": "2025-12-04"
+    },
+    {
+      "id": "pv-string-designer",
+      "name": "PVStringDesigner",
+      "headline": "ストリング回路と温度補正を同時に検討する設計支援",
+      "shortDescription": "低温時Voc・温度係数・直列枚数の整合を一画面で検証し、過電圧リスクを潰す。",
+      "tags": ["温度補正", "Voc", "設計"],
+      "badge": "設計",
+      "href": "./PVStringDesigner/",
+      "external": false,
+      "order": 30,
+      "updatedAt": "2025-12-05"
+    },
+    {
+      "id": "row-spacing-planner",
+      "name": "RowSpacingPlanner",
+      "headline": "影と方位を踏まえた設置間隔の設計を標準化",
+      "shortDescription": "傾斜・高さ・方位角を前提に、影長と最小列間隔の判断を再現可能にする。",
+      "tags": ["設置間隔", "影", "方位角"],
+      "badge": "設計",
+      "href": "./RowSpacingPlanner/",
+      "external": false,
+      "order": 40,
+      "updatedAt": "2025-12-08"
+    }
+  ]
+}
