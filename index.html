@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Energio Tool Hub</title>
-  <meta name="description" content="太陽光設計ツール集のハブ（静的HTML+CSS版）" />
+  <title>Energio Tool Hub - 業務ツールポータル</title>
+  <meta name="description" content="Energioの業務システム・設計ツールへの統合アクセスハブ" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -24,15 +24,21 @@
 
   <!-- Hero -->
   <section class="hero container">
-    <h1>太陽光設計ツール集</h1>
-    <p>回路・PR・温度補正・設置間隔。目的別に最短でアクセス。</p>
+    <h1>Energio 業務ツールポータル</h1>
+    <p>設計・解析から施工管理、事務処理まで。全社業務システムへここからアクセス。</p>
   </section>
 
   <!-- Controls -->
   <section class="controls container">
-    <div>
-      <label for="search" class="sr-only">検索</label>
-      <input id="search" type="text" class="search-input" placeholder="検索（名称・説明・タグ）" />
+    <div class="controls-top">
+      <div class="search-wrap">
+        <label for="search" class="sr-only">検索</label>
+        <input id="search" type="text" class="search-input" placeholder="検索（名称・説明・タグ）" />
+      </div>
+      <select id="sortSelect" class="sort-select" aria-label="並べ替え">
+        <option value="default">標準（おすすめ順）</option>
+        <option value="category">カテゴリ順</option>
+      </select>
     </div>
     <div class="tag-list" id="tagList">
       <button type="button" class="tag" data-tag="回路設計">回路設計</button>
@@ -52,6 +58,9 @@
       <button type="button" class="tag" data-tag="HUAWEI">HUAWEI</button>
       <button type="button" class="tag" data-tag="スマートロガー">スマートロガー</button>
       <button type="button" class="tag" data-tag="マニュアル">マニュアル</button>
+      <button type="button" class="tag" data-tag="施工管理">施工管理</button>
+      <button type="button" class="tag" data-tag="グループウェア">グループウェア</button>
+      <button type="button" class="tag" data-tag="販売管理">販売管理</button>
     </div>
   </section>
 
@@ -61,7 +70,7 @@
   <main class="grid container">
 
     <!-- Card 1 -->
-    <a class="card" href="https://energio-hub.work/SolarCircuitDesigner/" role="link" data-name="SolarCircuitDesigner" data-tags="回路設計,ストリング,レイアウト" data-desc="太陽光発電所の回路設計を高速化する割付ツール ストリング構成 直並列 設計 手戻り">
+    <a class="card" href="https://solarcircuitdesigner.energio-hub.work/" target="_blank" rel="noopener noreferrer" role="link" data-name="SolarCircuitDesigner" data-tags="回路設計,ストリング,レイアウト" data-desc="太陽光発電所の回路設計を高速化する割付ツール ストリング構成 直並列 設計 手戻り">
       <div class="card-badge-row">
         <span class="badge">設計</span>
         <span class="updated">最終更新: 2025-12-01</span>
@@ -75,7 +84,6 @@
         <span class="tag-chip">レイアウト</span>
       </div>
       <div class="card-footer">
-        <button class="icon-btn" aria-label="お気に入り">★</button>
         <span class="cta">開く
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </span>
@@ -83,7 +91,7 @@
     </a>
 
     <!-- Card 2 -->
-    <a class="card" href="https://energio-hub.work/PRanalyzerVer1/" role="link" data-name="PRanalyzerVer1" data-tags="PR,解析,CSV" data-desc="PR値 データ 性能低下 早期発見 日別 区画別 異常値 可視化">
+    <a class="card" href="https://pranalyzer.energio-hub.work/" target="_blank" rel="noopener noreferrer" role="link" data-name="PRanalyzerVer1" data-tags="PR,解析,CSV" data-desc="PR値 データ 性能低下 早期発見 日別 区画別 異常値 可視化">
       <div class="card-badge-row">
         <span class="badge">解析</span>
         <span class="updated">最終更新: 2025-12-04</span>
@@ -97,7 +105,6 @@
         <span class="tag-chip">CSV</span>
       </div>
       <div class="card-footer">
-        <button class="icon-btn" aria-label="お気に入り">★</button>
         <span class="cta">開く
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </span>
@@ -105,7 +112,7 @@
     </a>
 
     <!-- Card 3 -->
-    <a class="card" href="https://energio-hub.work/PVStringDesigner/" role="link" data-name="PVStringDesigner" data-tags="温度補正,Voc,設計" data-desc="ストリング 回路 温度補正 低温時Voc 温度係数 直列枚数 過電圧 リスク">
+    <a class="card" href="https://pvstringdesigner.energio-hub.work/" target="_blank" rel="noopener noreferrer" role="link" data-name="PVStringDesigner" data-tags="温度補正,Voc,設計" data-desc="ストリング 回路 温度補正 低温時Voc 温度係数 直列枚数 過電圧 リスク">
       <div class="card-badge-row">
         <span class="badge">設計</span>
         <span class="updated">最終更新: 2025-12-05</span>
@@ -119,7 +126,6 @@
         <span class="tag-chip">設計</span>
       </div>
       <div class="card-footer">
-        <button class="icon-btn" aria-label="お気に入り">★</button>
         <span class="cta">開く
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </span>
@@ -127,7 +133,7 @@
     </a>
 
     <!-- Card 4 -->
-    <a class="card" href="https://energio-hub.work/RowSpacingPlanner/" role="link" data-name="RowSpacingPlanner" data-tags="設置間隔,影,方位角" data-desc="影 方位 設置間隔 標準化 傾斜 高さ 方位角 影長 最小列間隔">
+    <a class="card" href="https://rowspacingplanner.energio-hub.work/" target="_blank" rel="noopener noreferrer" role="link" data-name="RowSpacingPlanner" data-tags="設置間隔,影,方位角" data-desc="影 方位 設置間隔 標準化 傾斜 高さ 方位角 影長 最小列間隔">
       <div class="card-badge-row">
         <span class="badge">設計</span>
         <span class="updated">最終更新: 2025-12-08</span>
@@ -141,7 +147,6 @@
         <span class="tag-chip">方位角</span>
       </div>
       <div class="card-footer">
-        <button class="icon-btn" aria-label="お気に入り">★</button>
         <span class="cta">開く
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </span>
@@ -163,7 +168,6 @@
         <span class="tag-chip">Excel</span>
       </div>
       <div class="card-footer">
-        <button class="icon-btn" aria-label="お気に入り">★</button>
         <span class="cta">DL
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         </span>
@@ -185,30 +189,88 @@
         <span class="tag-chip">Excel</span>
       </div>
       <div class="card-footer">
-        <button class="icon-btn" aria-label="お気に入り">★</button>
         <span class="cta">DL
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         </span>
       </div>
     </a>
     <!-- Card 7 (SmartLogger Settings PDF) -->
-    <a class="card" href="downloads/HUAWEI_SmartLogger_Setting_Values.pdf" download="HUAWEI_SmartLogger_Setting_Values.pdf" role="link" data-name="HUAWEI スマートロガー 整定値の確認方法" data-tags="スマートロガー,HUAWEI,PDF,整定値,設定" data-desc="整定値 設定 確認 手順 マニュアル HUAWEI SmartLogger OV GR">
+    <a class="card" href="downloads/HUAWEI_SmartLogger_Setting_Values.pdf" download="HUAWEI_SmartLogger_Setting_Values.pdf" role="link" data-name="HUAWEI スマートロガー 整定値の確認方法" data-tags="スマートロガー,HUAWEI,PDF,整定値,設定,マニュアル" data-desc="整定値 設定 確認 手順 マニュアル HUAWEI SmartLogger OV GR">
       <div class="card-badge-row">
         <span class="badge">マニュアル</span>
         <span class="updated">最終更新: 2025-12-12</span>
       </div>
       <h3>HUAWEI スマートロガー<br>整定値の確認方法</h3>
       <p class="headline">OV・GRなど整定値の設定・確認手順（PDF）</p>
-      <p class="desc line-clamp-3">Huawei公式マニュアルより引用。単一設定時の注意点や該当項目の設定値を解説。</p>
+      <p class="desc line-clamp-3">設定の注意点や、各項目の設定値を確認できます。</p>
       <div class="card-tags">
         <span class="tag-chip">スマートロガー</span>
         <span class="tag-chip">整定値</span>
         <span class="tag-chip">PDF</span>
       </div>
       <div class="card-footer">
-        <button class="icon-btn" aria-label="お気に入り">★</button>
         <span class="cta">DL
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </span>
+      </div>
+    </a>
+    <!-- Card 8 (ANDPAD) -->
+    <a class="card" href="https://andpad.jp/login" target="_blank" rel="noopener noreferrer" role="link" data-name="ANDPAD アンドパッド" data-tags="施工管理,現場管理,アプリ,クラウド" data-desc="施工管理 アプリ 現場 写真 図面 工程表 チャット クラウド 建築 建設 ANDPAD">
+      <div class="card-badge-row">
+        <span class="badge">施工管理</span>
+        <span class="updated">外部サイト</span>
+      </div>
+      <h3>ANDPAD</h3>
+      <p class="headline">建設・建築業界シェアNo.1のクラウド型施工管理アプリ</p>
+      <p class="desc line-clamp-3">現場の写真・図面・工程表を一元管理。チャット機能で連絡を効率化し、移動時間や事務作業を削減する。</p>
+      <div class="card-tags">
+        <span class="tag-chip">施工管理</span>
+        <span class="tag-chip">現場管理</span>
+        <span class="tag-chip">クラウド</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">ログイン
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+        </span>
+      </div>
+    </a>
+    <!-- Card 9 (desknet's NEO) -->
+    <a class="card" href="https://energio.dn-cloud.com/cgi-bin/dneo/dneo.cgi?" target="_blank" rel="noopener noreferrer" role="link" data-name="desknet's NEO デスクネッツ" data-tags="グループウェア,スケジュール,ワークフロー,勤怠" data-desc="グループウェア スケジュール 設備予約 ワークフロー 回覧板 安否確認 インフォメーション">
+      <div class="card-badge-row">
+        <span class="badge">業務管理</span>
+        <span class="updated">外部サイト</span>
+      </div>
+      <h3>desknet's NEO</h3>
+      <p class="headline">組織の情報共有と業務効率化を支えるグループウェア</p>
+      <p class="desc line-clamp-3">スケジュール管理・設備予約・ワークフロー・回覧板など、社内業務に必要な機能をワンストップで提供。</p>
+      <div class="card-tags">
+        <span class="tag-chip">グループウェア</span>
+        <span class="tag-chip">スケジュール</span>
+        <span class="tag-chip">ワークフロー</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">ログイン
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+        </span>
+      </div>
+    </a>
+    <!-- Card 10 (Rakuraku Hanbai) -->
+    <a class="card" href="https://hnbloom.rakurakuhanbai.jp/hrh8t9a" target="_blank" rel="noopener noreferrer" role="link" data-name="楽楽販売 らくらくはんばい" data-tags="販売管理,請求管理,クラウド" data-desc="販売管理 受注 発注 請求 在庫 クラウド データベース 業務改善 Excelレス">
+      <div class="card-badge-row">
+        <span class="badge">業務管理</span>
+        <span class="updated">外部サイト</span>
+      </div>
+      <h3>楽楽販売</h3>
+      <p class="headline">あらゆる業務を標準化・効率化するクラウド販売管理</p>
+      <p class="desc line-clamp-3">見積・受注・請求・発注・仕入・在庫など、あらゆる販売管理業務をExcelレスで一元管理。</p>
+      <div class="card-tags">
+        <span class="tag-chip">販売管理</span>
+        <span class="tag-chip">請求管理</span>
+        <span class="tag-chip">クラウド</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">ログイン
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
         </span>
       </div>
     </a>
@@ -221,14 +283,14 @@
     <div class="modal-backdrop" data-close></div>
     <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="aboutTitle" aria-describedby="aboutDesc">
       <button class="modal-close" id="aboutClose" aria-label="閉じる">×</button>
-      <h2 id="aboutTitle">このサイトについて</h2>
-      <p id="aboutDesc">Energio Tool Hub は、太陽光発電の設計業務を効率化するツールをまとめた「Webポータルサイト」です。目的のカードを選ぶだけで、すぐに専用ツールを利用できます。</p>
+      <h2 id="aboutTitle">Energio 業務ツールポータルについて</h2>
+      <p id="aboutDesc">本サイトは、Energioの業務に必要な「設計ツール」「業務システム」「マニュアル」を集約したポータルサイトです。</p>
       <ul class="modal-list">
-        <li><strong>インストール不要：</strong>すべてのツールはブラウザ上ですぐに動作します。</li>
-        <li><strong>登録不要：</strong>面倒な会員登録やログインはありません。</li>
-        <li><strong>サクサク検索：</strong>キーワードを入れるだけで、瞬時にツールを絞り込めます。</li>
+        <li><strong>設計ツール：</strong>回路設計や解析など、自社開発ツールはログイン不要・ブラウザ上ですぐに使えます。</li>
+        <li><strong>業務システム：</strong>ANDPADや楽楽販売などの外部クラウドサービスへ、迷わずアクセスできます。</li>
+        <li><strong>マニュアル：</strong>業務に必要な手順書や設定ファイルを、ここから直接ダウンロード可能です。</li>
       </ul>
-      <p class="modal-note">※入力したデータがサーバーに保存されることはありません。</p>
+      <p class="modal-note">※自社開発ツール（設計・解析等）において、入力したデータがサーバーに保存されることはありません。</p>
     </div>
   </div>
 </body>

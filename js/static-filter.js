@@ -11,8 +11,14 @@
 
   function renderSelectedTags(){
     if (!selected.size) { selectedTagsRow.textContent = ''; return; }
-    selectedTagsRow.innerHTML = '<span style="font-size:12px;color:#64748b">選択中タグ:</span> ' +
-      Array.from(selected).map(t => `<button class="tag" data-remove="${t}">${t} ×</button>`).join(' ');
+    
+    // Tag buttons
+    const tagsHtml = Array.from(selected).map(t => `<button class="tag" data-remove="${t}">${t} ×</button>`).join(' ');
+    // Clear All button
+    const clearAllHtml = `<button id="clearAllTags" class="tag-clear">全て解除</button>`;
+
+    selectedTagsRow.innerHTML = '<span style="font-size:12px;color:#64748b">選択中タグ:</span> ' + tagsHtml + clearAllHtml;
+    
     // remove handlers
     $$("[data-remove]").forEach(btn => {
       btn.addEventListener('click', () => {
@@ -24,6 +30,20 @@
         filter();
       });
     });
+
+    // clear all handler
+    const clearBtn = $('#clearAllTags');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        // remove active class from all buttons
+        selected.forEach(t => {
+          const b = tagList.querySelector(`[data-tag="${CSS.escape(t)}"]`);
+          if (b) b.classList.remove('tag--active');
+        });
+        selected.clear();
+        filter();
+      });
+    }
   }
 
   function matches(app, q, tags){
@@ -74,6 +94,49 @@
   const style = document.createElement('style');
   style.textContent = `.tag--active{background:#dc2626;color:#fff;border-color:#dc2626}`;
   document.head.appendChild(style);
+
+  // Sort logic
+  const sortSelect = $('#sortSelect');
+  const grid = $('.grid');
+  // Initial order is preserved in 'cards' array (since it was queried at start)
+  
+  const catOrder = {'設計':1, '解析':2, 'マニュアル':3, '施工管理':4, '業務管理':5};
+
+  function getCategory(card){
+    const el = card.querySelector('.badge');
+    return el ? el.textContent.trim() : '';
+  }
+
+  function sortCards() {
+    if (!sortSelect || !grid) return;
+    const mode = sortSelect.value;
+    
+    // We sort the 'cards' array (which contains DOM elements)
+    // Create a new array to sort so we don't mutate the original 'cards' order if we want to restore "default" easily?
+    // Actually 'cards' is Array.from(...) so it's a static array.
+    // If 'default', we just use the original order of 'cards'.
+    // If 'category', we sort based on that.
+    
+    const cardsToSort = [...cards]; // copy
+
+    if (mode === 'category') {
+      cardsToSort.sort((a, b) => {
+        const catA = getCategory(a);
+        const catB = getCategory(b);
+        const orderA = catOrder[catA] || 99;
+        const orderB = catOrder[catB] || 99;
+        if(orderA !== orderB) return orderA - orderB;
+        return 0; // stable sort otherwise
+      });
+    }
+    
+    // Re-append to grid
+    cardsToSort.forEach(c => grid.appendChild(c));
+  }
+
+  if (sortSelect) {
+    sortSelect.addEventListener('change', sortCards);
+  }
 
   // Initial
   filter();
