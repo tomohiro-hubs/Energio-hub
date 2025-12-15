@@ -65,7 +65,7 @@ body {
 @media (min-width: 1024px) { .grid { grid-template-columns: repeat(3, 1fr); } }
 
 /* Card */
-.card { display: block; background: #fff; color: inherit; text-decoration: none; border: 1px solid var(--border); border-radius: 1rem; padding: 1.25rem; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: transform 120ms ease, box-shadow 120ms ease; }
+.card { display: flex; flex-direction: column; height: 100%; background: #fff; color: inherit; text-decoration: none; border: 1px solid var(--border); border-radius: 1rem; padding: 1.25rem; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: transform 120ms ease, box-shadow 120ms ease; }
 .card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.12); border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
 .card:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
 .card-badge-row { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; }
@@ -82,7 +82,7 @@ body {
 .card-tags { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .tag-chip { font-size: 0.75rem; padding: 0.25rem 0.5rem; border-radius: 999px; background: var(--chip-bg); color: var(--chip-text); border: 1px solid var(--border); }
 
-.card-footer { margin-top: 1rem; display: flex; align-items: center; justify-content: space-between; }
+.card-footer { margin-top: auto; padding-top: 1rem; display: flex; align-items: center; justify-content: flex-end; }
 .icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; border-radius: 999px; border: 1px solid var(--border); background: #fff; color: #64748b; }
 .icon-btn:hover { border-color: #fecaca; background: #fff5f5; color: var(--accent); }
 .icon-btn.fav-active { background: #fef2f2; border-color: #fecaca; color: #dc2626; }

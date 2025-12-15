@@ -100,7 +100,7 @@
   const grid = $('.grid');
   // Initial order is preserved in 'cards' array (since it was queried at start)
   
-  const catOrder = {'設計':1, '解析':2, 'マニュアル':3, '施工管理':4, '業務管理':5};
+  const catOrder = {'設計':1, '解析':2, '調査':3, 'マニュアル':4, '施工管理':5, '業務管理':6};
 
   function getCategory(card){
     const el = card.querySelector('.badge');
