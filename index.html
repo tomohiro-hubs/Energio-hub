@@ -72,6 +72,7 @@
       <button type="button" class="tag" data-tag="労務管理">労務管理</button>
       <button type="button" class="tag" data-tag="調査">調査</button>
       <button type="button" class="tag" data-tag="監視">監視</button>
+      <button type="button" class="tag" data-tag="断線">断線</button>
     </div>
   </section>
 
@@ -80,7 +81,9 @@
   <!-- Card Grid -->
   <main class="grid container">
 
-    <!-- Card 1 -->
+    <!-- ■自社開発アプリ■ -->
+    
+    <!-- 1. SolarCircuitDesigner [設計] -->
     <a class="card" href="https://solarcircuitdesigner.energio-hub.work/" target="_blank" rel="noopener noreferrer" role="link" data-name="SolarCircuitDesigner" data-tags="回路設計,ストリング,レイアウト" data-desc="太陽光発電所の回路設計を高速化する割付ツール ストリング構成 直並列 設計 手戻り">
       <div class="card-badge-row">
         <span class="badge">設計</span>
@@ -101,28 +104,7 @@
       </div>
     </a>
 
-    <!-- Card 2 -->
-    <a class="card" href="https://pranalyzer.energio-hub.work/" target="_blank" rel="noopener noreferrer" role="link" data-name="PRanalyzerVer1" data-tags="PR,解析,CSV" data-desc="PR値 データ 性能低下 早期発見 日別 区画別 異常値 可視化">
-      <div class="card-badge-row">
-        <span class="badge">解析</span>
-        <span class="updated">最終更新: 2025-12-04</span>
-      </div>
-      <h3>PRanalyzerVer1</h3>
-      <p class="headline">PR値をデータから算出し、性能低下の兆候を早期発見</p>
-      <p class="desc line-clamp-3">日別・区画別のPRを整理して、異常値や比較対象のブレを見える化する。</p>
-      <div class="card-tags">
-        <span class="tag-chip">PR</span>
-        <span class="tag-chip">解析</span>
-        <span class="tag-chip">CSV</span>
-      </div>
-      <div class="card-footer">
-        <span class="cta">開く
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </span>
-      </div>
-    </a>
-
-    <!-- Card 3 -->
+    <!-- 2. PVStringDesigner [設計] -->
     <a class="card" href="https://pvstringdesigner.energio-hub.work/" target="_blank" rel="noopener noreferrer" role="link" data-name="PVStringDesigner" data-tags="温度補正,Voc,設計" data-desc="ストリング 回路 温度補正 低温時Voc 温度係数 直列枚数 過電圧 リスク">
       <div class="card-badge-row">
         <span class="badge">設計</span>
@@ -143,7 +125,7 @@
       </div>
     </a>
 
-    <!-- Card 4 -->
+    <!-- 3. RowSpacingPlanner [設計] -->
     <a class="card" href="https://rowspacingplanner.energio-hub.work/" target="_blank" rel="noopener noreferrer" role="link" data-name="RowSpacingPlanner" data-tags="設置間隔,影,方位角" data-desc="影 方位 設置間隔 標準化 傾斜 高さ 方位角 影長 最小列間隔">
       <div class="card-badge-row">
         <span class="badge">設計</span>
@@ -164,7 +146,282 @@
       </div>
     </a>
 
-    <!-- Card 5 (Excel Download) -->
+    <!-- 4. PRanalyzerVer1 [解析] -->
+    <a class="card" href="https://pranalyzer.energio-hub.work/" target="_blank" rel="noopener noreferrer" role="link" data-name="PRanalyzerVer1" data-tags="PR,解析,CSV" data-desc="PR値 データ 性能低下 早期発見 日別 区画別 異常値 可視化">
+      <div class="card-badge-row">
+        <span class="badge">解析</span>
+        <span class="updated">最終更新: 2025-12-04</span>
+      </div>
+      <h3>PRanalyzerVer1</h3>
+      <p class="headline">PR値をデータから算出し、性能低下の兆候を早期発見</p>
+      <p class="desc line-clamp-3">日別・区画別のPRを整理して、異常値や比較対象のブレを見える化する。</p>
+      <div class="card-tags">
+        <span class="tag-chip">PR</span>
+        <span class="tag-chip">解析</span>
+        <span class="tag-chip">CSV</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">開く
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- 5. StringScope [解析] -->
+    <a class="card" href="https://stringscope.energio-hub.work/" target="_blank" rel="noopener noreferrer" role="link" data-name="StringScope ストリングスコープ" data-tags="解析,ストリング,断線,和気SP" data-desc="和気SP ストリング 断線 故障 位置 特定 解析 メンテナンス">
+      <div class="card-badge-row">
+        <span class="badge">解析</span>
+        <span class="updated">最終更新: 2025-12-16</span>
+      </div>
+      <h3>StringScope</h3>
+      <p class="headline">ストリングの断線箇所を迅速に特定</p>
+      <p class="desc line-clamp-3">和気SP向けに特化した断線解析ツール。異常が発生しているストリングの位置や状況を可視化し、メンテナンス業務を支援する。</p>
+      <div class="card-tags">
+        <span class="tag-chip">解析</span>
+        <span class="tag-chip">ストリング</span>
+        <span class="tag-chip">断線</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">開く
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- ■外部サイト■ -->
+
+    <!-- 6. Fusion Solar [監視] -->
+    <a class="card" href="https://jp5.fusionsolar.huawei.com/unisso/login.action?service=%2Funisess%2Fv1%2Fauth%3Fservice%3D%252Fnetecowebext%252Fhome%252Findex.html#/LOGIN" target="_blank" rel="noopener noreferrer" role="link" data-name="Fusion Solar フュージョンソーラー" data-tags="監視,HUAWEI,PCS" data-desc="遠隔監視 発電量 アラート パワコン SmartLogger HUAWEI 太陽光">
+      <div class="card-badge-row">
+        <span class="badge">監視</span>
+        <span class="updated">外部サイト</span>
+      </div>
+      <h3>Fusion Solar</h3>
+      <p class="headline">HUAWEI製PCS・SmartLoggerの統合遠隔監視システム</p>
+      <p class="desc line-clamp-3">リアルタイムの発電状況やアラート情報をクラウド上で一元管理。O&M業務を効率化する公式プラットフォーム。</p>
+      <div class="card-tags">
+        <span class="tag-chip">監視</span>
+        <span class="tag-chip">HUAWEI</span>
+        <span class="tag-chip">PCS</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">ログイン
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- 7. Laplace [監視] -->
+    <a class="card" href="https://laplaceid.energymntr.com/" target="_blank" rel="noopener noreferrer" role="link" data-name="Laplace ラプラス" data-tags="監視,遠隔監視,O&M" data-desc="遠隔監視 システム 発電量 アラート 管理 太陽光 O&M ラプラス">
+      <div class="card-badge-row">
+        <span class="badge">監視</span>
+        <span class="updated">外部サイト</span>
+      </div>
+      <h3>Laplace</h3>
+      <p class="headline">太陽光発電所の遠隔監視システム</p>
+      <p class="desc line-clamp-3">発電量のモニタリングやアラート検知を行う遠隔監視プラットフォーム。</p>
+      <div class="card-tags">
+        <span class="tag-chip">監視</span>
+        <span class="tag-chip">遠隔監視</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">ログイン
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- 8. PVU-Finder [監視] -->
+    <a class="card" href="https://login.i-solar.co.jp/centermonitor2/" target="_blank" rel="noopener noreferrer" role="link" data-name="PVU-Finder（和気）" data-tags="監視,遠隔監視,O&M" data-desc="遠隔監視 システム 発電量 アラート 管理 太陽光 O&M">
+      <div class="card-badge-row">
+        <span class="badge">監視</span>
+        <span class="updated">外部サイト</span>
+      </div>
+      <h3>PVU-Finder（和気）</h3>
+      <p class="headline">太陽光発電所の遠隔監視システム</p>
+      <p class="desc line-clamp-3">発電量のモニタリングやアラート検知を行う遠隔監視プラットフォーム。</p>
+      <div class="card-tags">
+        <span class="tag-chip">監視</span>
+        <span class="tag-chip">遠隔監視</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">ログイン
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- 9. 重ねるハザードマップ [調査] -->
+    <a class="card" href="https://disaportal.gsi.go.jp/hazardmap/maps/index.html?ll=35.353216,138.735352&z=5&base=pale&vs=c1j0l0u0t0h0z0" target="_blank" rel="noopener noreferrer" role="link" data-name="重ねるハザードマップ" data-tags="調査,ハザードマップ,防災,地図" data-desc="ハザードマップ 国土交通省 洪水 土砂災害 津波 リスク 土地 情報 調査">
+      <div class="card-badge-row">
+        <span class="badge">調査</span>
+        <span class="updated">外部サイト</span>
+      </div>
+      <h3>重ねるハザードマップ</h3>
+      <p class="headline">災害リスク情報を地図上で自由に重ねて確認</p>
+      <p class="desc line-clamp-3">洪水・土砂災害・津波等のリスク情報を、地図上に重ねて一括表示できる国交省のサイト。</p>
+      <div class="card-tags">
+        <span class="tag-chip">調査</span>
+        <span class="tag-chip">ハザードマップ</span>
+        <span class="tag-chip">防災</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">開く
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- 10. 登記情報提供サービス [調査] -->
+    <a class="card" href="https://www1.touki.or.jp/" target="_blank" rel="noopener noreferrer" role="link" data-name="登記情報提供サービス" data-tags="調査,登記,土地,建物" data-desc="登記 土地 建物 不動産 所有者 地番図 公図 インターネット 謄本 法務局">
+      <div class="card-badge-row">
+        <span class="badge">調査</span>
+        <span class="updated">外部サイト</span>
+      </div>
+      <h3>登記情報提供サービス</h3>
+      <p class="headline">不動産登記情報をインターネットですぐに確認</p>
+      <p class="desc line-clamp-3">法務署が保有する登記所備付の地図（公図）や土地・建物の登記情報を、PC画面上で確認・PDF保存できる有料サービス。</p>
+      <div class="card-tags">
+        <span class="tag-chip">調査</span>
+        <span class="tag-chip">登記</span>
+        <span class="tag-chip">土地</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">開く
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- 11. 公図マッピング [調査] -->
+    <a class="card" href="https://najoken.com/kouzu-map/" target="_blank" rel="noopener noreferrer" role="link" data-name="公図マッピング 構図" data-tags="調査,公図,地図" data-desc="公図 14条地図 マッピング 重ね合わせ 登記 地番 Googleマップ">
+      <div class="card-badge-row">
+        <span class="badge">調査</span>
+        <span class="updated">外部サイト</span>
+      </div>
+      <h3>公図マッピング</h3>
+      <p class="headline">公図データを地図上に重ねて可視化</p>
+      <p class="desc line-clamp-3">取得した公図データ（XML形式等）を読み込み、Googleマップ等の地図上に正確に重ねて表示するツール。</p>
+      <div class="card-tags">
+        <span class="tag-chip">調査</span>
+        <span class="tag-chip">公図</span>
+        <span class="tag-chip">地図</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">開く
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- 12. ANDPAD [施工管理] -->
+    <a class="card" href="https://andpad.jp/login" target="_blank" rel="noopener noreferrer" role="link" data-name="ANDPAD アンドパッド" data-tags="施工管理,現場管理,アプリ,クラウド" data-desc="施工管理 アプリ 現場 写真 図面 工程表 チャット クラウド 建築 建設 ANDPAD">
+      <div class="card-badge-row">
+        <span class="badge">施工管理</span>
+        <span class="updated">外部サイト</span>
+      </div>
+      <h3>ANDPAD</h3>
+      <p class="headline">建設・建築業界シェアNo.1のクラウド型施工管理アプリ</p>
+      <p class="desc line-clamp-3">現場の写真・図面・工程表を一元管理。チャット機能で連絡を効率化し、移動時間や事務作業を削減する。</p>
+      <div class="card-tags">
+        <span class="tag-chip">施工管理</span>
+        <span class="tag-chip">現場管理</span>
+        <span class="tag-chip">クラウド</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">ログイン
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- 13. desknet's NEO [業務管理] -->
+    <a class="card" href="https://energio.dn-cloud.com/cgi-bin/dneo/dneo.cgi?" target="_blank" rel="noopener noreferrer" role="link" data-name="desknet's NEO デスクネッツ" data-tags="グループウェア,スケジュール,ワークフロー,勤怠" data-desc="グループウェア スケジュール 設備予約 ワークフロー 回覧板 安否確認 インフォメーション">
+      <div class="card-badge-row">
+        <span class="badge">業務管理</span>
+        <span class="updated">外部サイト</span>
+      </div>
+      <h3>desknet's NEO</h3>
+      <p class="headline">組織の情報共有と業務効率化を支えるグループウェア</p>
+      <p class="desc line-clamp-3">スケジュール管理・設備予約・ワークフロー・回覧板など、社内業務に必要な機能をワンストップで提供。</p>
+      <div class="card-tags">
+        <span class="tag-chip">グループウェア</span>
+        <span class="tag-chip">スケジュール</span>
+        <span class="tag-chip">ワークフロー</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">ログイン
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- 14. 楽楽販売 [業務管理] -->
+    <a class="card" href="https://hnbloom.rakurakuhanbai.jp/hrh8t9a" target="_blank" rel="noopener noreferrer" role="link" data-name="楽楽販売 らくらくはんばい" data-tags="販売管理,請求管理,クラウド" data-desc="販売管理 受注 発注 請求 在庫 クラウド データベース 業務改善 Excelレス">
+      <div class="card-badge-row">
+        <span class="badge">業務管理</span>
+        <span class="updated">外部サイト</span>
+      </div>
+      <h3>楽楽販売</h3>
+      <p class="headline">あらゆる業務を標準化・効率化するクラウド販売管理</p>
+      <p class="desc line-clamp-3">見積・受注・請求・発注・仕入・在庫など、あらゆる販売管理業務をExcelレスで一元管理。</p>
+      <div class="card-tags">
+        <span class="tag-chip">販売管理</span>
+        <span class="tag-chip">請求管理</span>
+        <span class="tag-chip">クラウド</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">ログイン
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- 15. SmartHR [業務管理] -->
+    <a class="card" href="https://eicohenergio0224.smarthr.jp/login" target="_blank" rel="noopener noreferrer" role="link" data-name="SmartHR スマートHR" data-tags="労務管理,人事,年末調整,給与明細" data-desc="労務管理 人事 入社手続き 年末調整 給与明細 ペーパーレス クラウド マイナンバー">
+      <div class="card-badge-row">
+        <span class="badge">業務管理</span>
+        <span class="updated">外部サイト</span>
+      </div>
+      <h3>SmartHR</h3>
+      <p class="headline">人事・労務の煩雑な業務をペーパーレス化</p>
+      <p class="desc line-clamp-3">入社手続き・雇用契約・年末調整・給与明細の配布などをWeb上で完結。従業員情報を一元管理し、手続きの手間を削減。</p>
+      <div class="card-tags">
+        <span class="tag-chip">労務管理</span>
+        <span class="tag-chip">年末調整</span>
+        <span class="tag-chip">給与明細</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">ログイン
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- 16. NI Collabo [業務管理] -->
+    <a class="card" href="https://niconsul.com/yo8fe7mc/ni/niware/evidence/index.php?hkey=clbheader_409f1fe0066f931cb5b4a6d4986e332a" target="_blank" rel="noopener noreferrer" role="link" data-name="NI Collabo 360 コラボ" data-tags="グループウェア,経費精算,ワークフロー" data-desc="グループウェア スケジュール 経費精算 ワークフロー 電子稟議 可視化経営 NIコラボ">
+      <div class="card-badge-row">
+        <span class="badge">業務管理</span>
+        <span class="updated">外部サイト</span>
+      </div>
+      <h3>NI Collabo 360</h3>
+      <p class="headline">「可視化経営」を支援する多機能グループウェア</p>
+      <p class="desc line-clamp-3">スケジュール、経費精算、ワークフロー、安否確認など、経営と現場をつなぐ多彩な機能を統合。</p>
+      <div class="card-tags">
+        <span class="tag-chip">グループウェア</span>
+        <span class="tag-chip">経費精算</span>
+        <span class="tag-chip">ワークフロー</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">ログイン
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- ■マニュアル■ -->
+
+    <!-- 17. HUAWEI PCS設計ツール [マニュアル] -->
     <a class="card" href="downloads/HUAWEI_PCS_Tool_20250826.xlsx" download="HUAWEI_PCS_Tool_20250826.xlsx" role="link" data-name="HUAWEI PCS設計ツール" data-tags="設計,PCS,HUAWEI,Excel" data-desc="HUAWEI製PCS 接続枚数計算ツール 産業用 Excel 過積載率 電圧計算">
       <div class="card-badge-row">
         <span class="badge">設計</span>
@@ -185,7 +442,7 @@
       </div>
     </a>
 
-    <!-- Card 6 (SmartLogger Excel) -->
+    <!-- 18. HUAWEI スマートロガー 環境測定機器設定方法 [マニュアル] -->
     <a class="card" href="downloads/HUAWEI_SmartLogger_WeatherStation_Setup_2024.xlsx" download="HUAWEI_SmartLogger_WeatherStation_Setup_2024.xlsx" role="link" data-name="HUAWEI スマートロガー 環境測定機器設定方法" data-tags="スマートロガー,HUAWEI,Excel,マニュアル" data-desc="気象観測装置 取付 設定 マニュアル HUAWEI SmartLogger 日射計 気温計 接続">
       <div class="card-badge-row">
         <span class="badge">マニュアル</span>
@@ -205,7 +462,8 @@
         </span>
       </div>
     </a>
-    <!-- Card 7 (SmartLogger Settings PDF) -->
+
+    <!-- 19. HUAWEI スマートロガー 整定値の確認方法 [マニュアル] -->
     <a class="card" href="downloads/HUAWEI_SmartLogger_Setting_Values.pdf" download="HUAWEI_SmartLogger_Setting_Values.pdf" role="link" data-name="HUAWEI スマートロガー 整定値の確認方法" data-tags="スマートロガー,HUAWEI,PDF,整定値,設定,マニュアル" data-desc="整定値 設定 確認 手順 マニュアル HUAWEI SmartLogger OV GR">
       <div class="card-badge-row">
         <span class="badge">マニュアル</span>
@@ -225,224 +483,7 @@
         </span>
       </div>
     </a>
-    <!-- Card 8 (ANDPAD) -->
-    <a class="card" href="https://andpad.jp/login" target="_blank" rel="noopener noreferrer" role="link" data-name="ANDPAD アンドパッド" data-tags="施工管理,現場管理,アプリ,クラウド" data-desc="施工管理 アプリ 現場 写真 図面 工程表 チャット クラウド 建築 建設 ANDPAD">
-      <div class="card-badge-row">
-        <span class="badge">施工管理</span>
-        <span class="updated">外部サイト</span>
-      </div>
-      <h3>ANDPAD</h3>
-      <p class="headline">建設・建築業界シェアNo.1のクラウド型施工管理アプリ</p>
-      <p class="desc line-clamp-3">現場の写真・図面・工程表を一元管理。チャット機能で連絡を効率化し、移動時間や事務作業を削減する。</p>
-      <div class="card-tags">
-        <span class="tag-chip">施工管理</span>
-        <span class="tag-chip">現場管理</span>
-        <span class="tag-chip">クラウド</span>
-      </div>
-      <div class="card-footer">
-        <span class="cta">ログイン
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-        </span>
-      </div>
-    </a>
-    <!-- Card 9 (desknet's NEO) -->
-    <a class="card" href="https://energio.dn-cloud.com/cgi-bin/dneo/dneo.cgi?" target="_blank" rel="noopener noreferrer" role="link" data-name="desknet's NEO デスクネッツ" data-tags="グループウェア,スケジュール,ワークフロー,勤怠" data-desc="グループウェア スケジュール 設備予約 ワークフロー 回覧板 安否確認 インフォメーション">
-      <div class="card-badge-row">
-        <span class="badge">業務管理</span>
-        <span class="updated">外部サイト</span>
-      </div>
-      <h3>desknet's NEO</h3>
-      <p class="headline">組織の情報共有と業務効率化を支えるグループウェア</p>
-      <p class="desc line-clamp-3">スケジュール管理・設備予約・ワークフロー・回覧板など、社内業務に必要な機能をワンストップで提供。</p>
-      <div class="card-tags">
-        <span class="tag-chip">グループウェア</span>
-        <span class="tag-chip">スケジュール</span>
-        <span class="tag-chip">ワークフロー</span>
-      </div>
-      <div class="card-footer">
-        <span class="cta">ログイン
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-        </span>
-      </div>
-    </a>
-    <!-- Card 10 (Rakuraku Hanbai) -->
-    <a class="card" href="https://hnbloom.rakurakuhanbai.jp/hrh8t9a" target="_blank" rel="noopener noreferrer" role="link" data-name="楽楽販売 らくらくはんばい" data-tags="販売管理,請求管理,クラウド" data-desc="販売管理 受注 発注 請求 在庫 クラウド データベース 業務改善 Excelレス">
-      <div class="card-badge-row">
-        <span class="badge">業務管理</span>
-        <span class="updated">外部サイト</span>
-      </div>
-      <h3>楽楽販売</h3>
-      <p class="headline">あらゆる業務を標準化・効率化するクラウド販売管理</p>
-      <p class="desc line-clamp-3">見積・受注・請求・発注・仕入・在庫など、あらゆる販売管理業務をExcelレスで一元管理。</p>
-      <div class="card-tags">
-        <span class="tag-chip">販売管理</span>
-        <span class="tag-chip">請求管理</span>
-        <span class="tag-chip">クラウド</span>
-      </div>
-      <div class="card-footer">
-        <span class="cta">ログイン
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-        </span>
-      </div>
-    </a>
-    <!-- Card 11 (SmartHR) -->
-    <a class="card" href="https://eicohenergio0224.smarthr.jp/login" target="_blank" rel="noopener noreferrer" role="link" data-name="SmartHR スマートHR" data-tags="労務管理,人事,年末調整,給与明細" data-desc="労務管理 人事 入社手続き 年末調整 給与明細 ペーパーレス クラウド マイナンバー">
-      <div class="card-badge-row">
-        <span class="badge">業務管理</span>
-        <span class="updated">外部サイト</span>
-      </div>
-      <h3>SmartHR</h3>
-      <p class="headline">人事・労務の煩雑な業務をペーパーレス化</p>
-      <p class="desc line-clamp-3">入社手続き・雇用契約・年末調整・給与明細の配布などをWeb上で完結。従業員情報を一元管理し、手続きの手間を削減。</p>
-      <div class="card-tags">
-        <span class="tag-chip">労務管理</span>
-        <span class="tag-chip">年末調整</span>
-        <span class="tag-chip">給与明細</span>
-      </div>
-      <div class="card-footer">
-        <span class="cta">ログイン
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-        </span>
-      </div>
-    </a>
-    <!-- Card 12 (NI Collabo) -->
-    <a class="card" href="https://niconsul.com/yo8fe7mc/ni/niware/evidence/index.php?hkey=clbheader_409f1fe0066f931cb5b4a6d4986e332a" target="_blank" rel="noopener noreferrer" role="link" data-name="NI Collabo 360 コラボ" data-tags="グループウェア,経費精算,ワークフロー" data-desc="グループウェア スケジュール 経費精算 ワークフロー 電子稟議 可視化経営 NIコラボ">
-      <div class="card-badge-row">
-        <span class="badge">業務管理</span>
-        <span class="updated">外部サイト</span>
-      </div>
-      <h3>NI Collabo 360</h3>
-      <p class="headline">「可視化経営」を支援する多機能グループウェア</p>
-      <p class="desc line-clamp-3">スケジュール、経費精算、ワークフロー、安否確認など、経営と現場をつなぐ多彩な機能を統合。</p>
-      <div class="card-tags">
-        <span class="tag-chip">グループウェア</span>
-        <span class="tag-chip">経費精算</span>
-        <span class="tag-chip">ワークフロー</span>
-      </div>
-      <div class="card-footer">
-        <span class="cta">ログイン
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-        </span>
-      </div>
-    </a>
-    <!-- Card 13 (Hazard Map) -->
-    <a class="card" href="https://disaportal.gsi.go.jp/hazardmap/maps/index.html?ll=35.353216,138.735352&z=5&base=pale&vs=c1j0l0u0t0h0z0" target="_blank" rel="noopener noreferrer" role="link" data-name="重ねるハザードマップ" data-tags="調査,ハザードマップ,防災,地図" data-desc="ハザードマップ 国土交通省 洪水 土砂災害 津波 リスク 土地 情報 調査">
-      <div class="card-badge-row">
-        <span class="badge">調査</span>
-        <span class="updated">外部サイト</span>
-      </div>
-      <h3>重ねるハザードマップ</h3>
-      <p class="headline">災害リスク情報を地図上で自由に重ねて確認</p>
-      <p class="desc line-clamp-3">洪水・土砂災害・津波等のリスク情報を、地図上に重ねて一括表示できる国交省のサイト。</p>
-      <div class="card-tags">
-        <span class="tag-chip">調査</span>
-        <span class="tag-chip">ハザードマップ</span>
-        <span class="tag-chip">防災</span>
-      </div>
-      <div class="card-footer">
-        <span class="cta">開く
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </span>
-      </div>
-    </a>
-    <!-- Card 14 (Touki Info) -->
-    <a class="card" href="https://www1.touki.or.jp/" target="_blank" rel="noopener noreferrer" role="link" data-name="登記情報提供サービス" data-tags="調査,登記,土地,建物" data-desc="登記 土地 建物 不動産 所有者 地番図 公図 インターネット 謄本 法務局">
-      <div class="card-badge-row">
-        <span class="badge">調査</span>
-        <span class="updated">外部サイト</span>
-      </div>
-      <h3>登記情報提供サービス</h3>
-      <p class="headline">不動産登記情報をインターネットですぐに確認</p>
-      <p class="desc line-clamp-3">法務署が保有する登記所備付の地図（公図）や土地・建物の登記情報を、PC画面上で確認・PDF保存できる有料サービス。</p>
-      <div class="card-tags">
-        <span class="tag-chip">調査</span>
-        <span class="tag-chip">登記</span>
-        <span class="tag-chip">土地</span>
-      </div>
-      <div class="card-footer">
-        <span class="cta">開く
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </span>
-      </div>
-    </a>
-    <!-- Card 15 (Kouzu Mapping) -->
-    <a class="card" href="https://najoken.com/kouzu-map/" target="_blank" rel="noopener noreferrer" role="link" data-name="公図マッピング 構図" data-tags="調査,公図,地図" data-desc="公図 14条地図 マッピング 重ね合わせ 登記 地番 Googleマップ">
-      <div class="card-badge-row">
-        <span class="badge">調査</span>
-        <span class="updated">外部サイト</span>
-      </div>
-      <h3>公図マッピング</h3>
-      <p class="headline">公図データを地図上に重ねて可視化</p>
-      <p class="desc line-clamp-3">取得した公図データ（XML形式等）を読み込み、Googleマップ等の地図上に正確に重ねて表示するツール。</p>
-      <div class="card-tags">
-        <span class="tag-chip">調査</span>
-        <span class="tag-chip">公図</span>
-        <span class="tag-chip">地図</span>
-      </div>
-      <div class="card-footer">
-        <span class="cta">開く
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </span>
-      </div>
-    </a>
-    <!-- Card 16 (Fusion Solar) -->
-    <a class="card" href="https://jp5.fusionsolar.huawei.com/unisso/login.action?service=%2Funisess%2Fv1%2Fauth%3Fservice%3D%252Fnetecowebext%252Fhome%252Findex.html#/LOGIN" target="_blank" rel="noopener noreferrer" role="link" data-name="Fusion Solar フュージョンソーラー" data-tags="監視,HUAWEI,PCS" data-desc="遠隔監視 発電量 アラート パワコン SmartLogger HUAWEI 太陽光">
-      <div class="card-badge-row">
-        <span class="badge">監視</span>
-        <span class="updated">外部サイト</span>
-      </div>
-      <h3>Fusion Solar</h3>
-      <p class="headline">HUAWEI製PCS・SmartLoggerの統合遠隔監視システム</p>
-      <p class="desc line-clamp-3">リアルタイムの発電状況やアラート情報をクラウド上で一元管理。O&M業務を効率化する公式プラットフォーム。</p>
-      <div class="card-tags">
-        <span class="tag-chip">監視</span>
-        <span class="tag-chip">HUAWEI</span>
-        <span class="tag-chip">PCS</span>
-      </div>
-      <div class="card-footer">
-        <span class="cta">ログイン
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-        </span>
-      </div>
-    </a>
-    <!-- Card 17 (Laplace) -->
-    <a class="card" href="https://laplaceid.energymntr.com/" target="_blank" rel="noopener noreferrer" role="link" data-name="Laplace ラプラス" data-tags="監視,遠隔監視,O&M" data-desc="遠隔監視 システム 発電量 アラート 管理 太陽光 O&M ラプラス">
-      <div class="card-badge-row">
-        <span class="badge">監視</span>
-        <span class="updated">外部サイト</span>
-      </div>
-      <h3>Laplace</h3>
-      <p class="headline">太陽光発電所の遠隔監視システム</p>
-      <p class="desc line-clamp-3">発電量のモニタリングやアラート検知を行う遠隔監視プラットフォーム。</p>
-      <div class="card-tags">
-        <span class="tag-chip">監視</span>
-        <span class="tag-chip">遠隔監視</span>
-      </div>
-      <div class="card-footer">
-        <span class="cta">ログイン
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-        </span>
-      </div>
-    </a>
-    <!-- Card 18 (PVU-Finder) -->
-    <a class="card" href="https://login.i-solar.co.jp/centermonitor2/" target="_blank" rel="noopener noreferrer" role="link" data-name="PVU-Finder（和気）" data-tags="監視,遠隔監視,O&M" data-desc="遠隔監視 システム 発電量 アラート 管理 太陽光 O&M">
-      <div class="card-badge-row">
-        <span class="badge">監視</span>
-        <span class="updated">外部サイト</span>
-      </div>
-      <h3>PVU-Finder（和気）</h3>
-      <p class="headline">太陽光発電所の遠隔監視システム</p>
-      <p class="desc line-clamp-3">発電量のモニタリングやアラート検知を行う遠隔監視プラットフォーム。</p>
-      <div class="card-tags">
-        <span class="tag-chip">監視</span>
-        <span class="tag-chip">遠隔監視</span>
-      </div>
-      <div class="card-footer">
-        <span class="cta">ログイン
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-        </span>
-      </div>
-    </a>
+
   </main>
 
   <footer class="footer container">Energio Tool Hub - 業務ツールポータル</footer>
