@@ -23,10 +23,26 @@ body {
 
 .container { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
 
+/* Loading Screen */
+#loading-screen { position: fixed; inset: 0; z-index: 9999; background-color: #fff; display: flex; align-items: center; justify-content: center; 
+  /* 背景のフェードアウト：ロゴが消えた後に開始 (delay 1.5s) */
+  transition: opacity 2.5s ease 1.2s, visibility 2.5s ease 1.2s; 
+}
+#loading-screen.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+
+.loading-logo { width: min(240px, 60vw); height: auto; animation: logoAppear 0.8s ease-out; 
+  /* ロゴのフェードアウト：クラス付与と同時に開始 */
+  transition: opacity 1.0s ease, transform 1.0s ease; 
+}
+#loading-screen.hidden .loading-logo { opacity: 0; transform: scale(1.05); }
+
+@keyframes logoAppear { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+
 /* Header */
 .header { background: rgba(255,255,255,.75); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,.04); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1rem; }
-.brand { font-weight: 600; letter-spacing: -0.01em; color: var(--text); text-decoration: none; position: relative; }
+.brand { font-weight: 600; letter-spacing: -0.01em; color: var(--text); text-decoration: none; position: relative; display: flex; align-items: center; gap: 0.75rem; }
+.logo-img { height: 32px; width: auto; object-fit: contain; }
 .brand::after { content:""; position:absolute; left:0; bottom:-2px; height:2px; width:100%; background: linear-gradient(90deg, var(--accent), transparent); opacity:.3; }
 .nav a { color: var(--muted); text-decoration: none; font-size: 0.875rem; }
 .nav a:hover { color: var(--text); }

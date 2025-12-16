@@ -172,4 +172,14 @@
       }
     });
   }
+  // Loading Screen
+  window.addEventListener('load', () => {
+    const loader = document.getElementById('loading-screen');
+    if (loader) {
+      // 1.5秒待ってからフェードアウトさせる
+      setTimeout(() => {
+        loader.classList.add('hidden');
+      }, 1500);
+    }
+  });
 })();
