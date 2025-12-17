@@ -182,4 +182,19 @@
       }, 1500);
     }
   });
+
+  // Password Protected Download
+  window.downloadWithPassword = function(url, correctPassword) {
+    const input = prompt("ダウンロードパスワードを入力してください:");
+    if (input === correctPassword) {
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = url.split('/').pop();
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else if (input !== null) {
+      alert("パスワードが間違っています。");
+    }
+  };
 })();
