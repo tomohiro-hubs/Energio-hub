@@ -59,13 +59,29 @@ body {
 .search-wrap { flex: 1; min-width: 200px; }
 .sort-select { border: 1px solid var(--border); border-radius: 0.75rem; padding: 0.625rem 2rem 0.625rem 1rem; font-size: 1rem; background-color: #fff; cursor: pointer; color: var(--text); }
 .sort-select:focus { outline: none; border-color: var(--ring); }
-/* @media (min-width: 640px) { .controls { grid-template-columns: 1fr auto; align-items: center; } } */
-.search-input { width: 100%; border: 1px solid var(--border); border-radius: 0.75rem; padding: 0.625rem 0.75rem; font-size: 1rem; }
-.search-input:focus { outline: none; border-color: var(--ring); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring) 25%, transparent); }
-.tag-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+/* Search Input Style Restoration */
+.search-input { width: 100%; border: 1px solid var(--border); border-radius: 999px; padding: 1rem 1.5rem; font-size: 1rem; background-color: #fff; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+.search-input:focus { outline: none; border-color: var(--ring); box-shadow: 0 0 0 4px color-mix(in srgb, var(--ring) 25%, transparent); }
+
+.tag-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.tag-category { display: flex; flex-direction: column; gap: 0.5rem; }
+@media (min-width: 768px) {
+  .tag-category { flex-direction: row; align-items: baseline; }
+}
+.tag-cat-label { 
+  font-size: 0.75rem; 
+  font-weight: 700; 
+  color: #94a3b8; /* slate-400 */
+  min-width: 8rem; 
+  flex-shrink: 0;
+}
+.tag-row { display: flex; flex-wrap: wrap; gap: 0.5rem; flex: 1; }
+
 .tag { font-size: 0.75rem; padding: 0.25rem 0.5rem; border-radius: 999px; background: var(--chip-bg); color: var(--chip-text); border: 1px solid var(--border); cursor: pointer; }
 .tag:hover { background: #fee2e2; border-color: #fecaca; color: #b91c1c; }
 .tag.selected { background: #dc2626; color: white; border-color: #dc2626; }
+.tag--active { background: #dc2626; color: white; border-color: #dc2626; } /* JS用 */
 
 /* Selected tags row */
 .selected-tags { padding: 0 1rem; margin: -0.5rem auto 0.5rem; color: var(--muted); font-size: 0.75rem; display:flex; flex-wrap: wrap; gap: .5rem; align-items:center; }
@@ -144,25 +160,3 @@ background-size: 24px 24px; mix-blend-mode: normal; }
 .modal-panel h2{ margin: 0 0 .5rem; font-size: 1.125rem; font-weight: 600; }
 .modal-list{ margin: .5rem 0 .75rem; padding-left: 1.25rem; color: var(--muted); }
 .modal-note{ color: var(--muted); font-size: .875rem; }
-
-/* Modal */
-.modal { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; }
-.modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.45); }
-.modal-panel { position: relative; z-index: 1; width: min(640px, calc(100% - 2rem)); background: #fff; border: 1px solid var(--border); border-radius: 1rem; padding: 1rem 1rem 1.25rem; box-shadow: 0 20px 40px rgba(0,0,0,0.16); outline: none; }
-.modal-panel:focus { outline: 2px solid var(--ring); outline-offset: 2px; }
-.modal-close { position: absolute; top: .5rem; right: .5rem; border: 1px solid var(--border); width: 2rem; height: 2rem; border-radius: 999px; background: #fff; color: #64748b; }
-.modal-close:hover { border-color: #fecaca; background: #fff5f5; color: var(--accent); }
-.modal-list { margin: .5rem 0 0; padding-left: 1rem; color: var(--muted); }
-.modal-list li { margin: .25rem 0; }
-.modal-note { margin-top: .5rem; color: var(--muted); }
-
-/* Modal */
-.modal{ position: fixed; inset: 0; display: grid; place-items: center; z-index: 50; }
-.modal-backdrop{ position: absolute; inset: 0; background: rgba(15,23,42,.5); backdrop-filter: blur(2px); }
-.modal-panel{ position: relative; z-index: 1; width: min(640px, 92%); max-height: 80vh; overflow: auto; background: #fff; border: 1px solid var(--border); border-radius: 1rem; box-shadow: 0 20px 60px rgba(0,0,0,.2); padding: 1.25rem 1.25rem 1rem; }
-.modal-close{ position: absolute; top: .5rem; right: .75rem; border: 1px solid var(--border); background: #fff; width: 2rem; height: 2rem; border-radius: 999px; color: #64748b; }
-.modal-close:hover{ border-color: #fecaca; background: #fff5f5; color: var(--accent); }
-.modal-panel h2{ margin: 0 0 .5rem; font-size: 1.125rem; font-weight: 600; }
-.modal-panel p{ color: var(--muted); margin: .25rem 0 .75rem; }
-.modal-list{ padding-left: 1.2rem; color: var(--muted); }
-.modal-note{ font-size: .875rem; color: #475569; margin-top: .75rem; }

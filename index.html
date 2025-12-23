@@ -49,66 +49,102 @@
       </select>
     </div>
     <div class="tag-list" id="tagList">
-      <!-- 設計・解析 -->
-      <button type="button" class="tag" data-tag="設計">設計</button>
-      <button type="button" class="tag" data-tag="回路設計">回路設計</button>
-      <button type="button" class="tag" data-tag="ストリング">ストリング</button>
-      <button type="button" class="tag" data-tag="レイアウト">レイアウト</button>
-      <button type="button" class="tag" data-tag="設置間隔">設置間隔</button>
-      <button type="button" class="tag" data-tag="影">影</button>
-      <button type="button" class="tag" data-tag="方位角">方位角</button>
-      <button type="button" class="tag" data-tag="温度補正">温度補正</button>
-      <button type="button" class="tag" data-tag="Voc">Voc</button>
-      <button type="button" class="tag" data-tag="解析">解析</button>
-      <button type="button" class="tag" data-tag="PR">PR</button>
-      <button type="button" class="tag" data-tag="断線">断線</button>
-      <button type="button" class="tag" data-tag="和気SP">和気SP</button>
       
-      <!-- 監視・機器 -->
-      <button type="button" class="tag" data-tag="監視">監視</button>
-      <button type="button" class="tag" data-tag="遠隔監視">遠隔監視</button>
-      <button type="button" class="tag" data-tag="O&M">O&M</button>
-      <button type="button" class="tag" data-tag="PCS">PCS</button>
-      <button type="button" class="tag" data-tag="スマートロガー">スマートロガー</button>
-      <button type="button" class="tag" data-tag="HUAWEI">HUAWEI</button>
+      <!-- 1. 設計・解析 -->
+      <div class="tag-category">
+        <span class="tag-cat-label">設計・解析</span>
+        <div class="tag-row">
+          <button type="button" class="tag" data-tag="設計">設計</button>
+          <button type="button" class="tag" data-tag="回路設計">回路設計</button>
+          <button type="button" class="tag" data-tag="ストリング">ストリング</button>
+          <button type="button" class="tag" data-tag="レイアウト">レイアウト</button>
+          <button type="button" class="tag" data-tag="設置間隔">設置間隔</button>
+          <button type="button" class="tag" data-tag="影">影</button>
+          <button type="button" class="tag" data-tag="方位角">方位角</button>
+          <button type="button" class="tag" data-tag="温度補正">温度補正</button>
+          <button type="button" class="tag" data-tag="Voc">Voc</button>
+          <button type="button" class="tag" data-tag="解析">解析</button>
+          <button type="button" class="tag" data-tag="PR">PR</button>
+          <button type="button" class="tag" data-tag="断線">断線</button>
+          <button type="button" class="tag" data-tag="和気SP">和気SP</button>
+        </div>
+      </div>
 
-      <!-- 調査・地図 -->
-      <button type="button" class="tag" data-tag="調査">調査</button>
-      <button type="button" class="tag" data-tag="ハザードマップ">ハザードマップ</button>
-      <button type="button" class="tag" data-tag="防災">防災</button>
-      <button type="button" class="tag" data-tag="地図">地図</button>
-      <button type="button" class="tag" data-tag="公図">公図</button>
-      <button type="button" class="tag" data-tag="登記">登記</button>
+      <!-- 2. 監視・機器 -->
+      <div class="tag-category">
+        <span class="tag-cat-label">監視・機器</span>
+        <div class="tag-row">
+          <button type="button" class="tag" data-tag="監視">監視</button>
+          <button type="button" class="tag" data-tag="遠隔監視">遠隔監視</button>
+          <button type="button" class="tag" data-tag="O&M">O&M</button>
+          <button type="button" class="tag" data-tag="PCS">PCS</button>
+          <button type="button" class="tag" data-tag="スマートロガー">スマートロガー</button>
+          <button type="button" class="tag" data-tag="HUAWEI">HUAWEI</button>
+        </div>
+      </div>
 
-      <!-- 業務・施工・販売・労務 -->
-      <button type="button" class="tag" data-tag="業務管理">業務管理</button>
-      <button type="button" class="tag" data-tag="施工管理">施工管理</button>
-      <button type="button" class="tag" data-tag="現場管理">現場管理</button>
-      <button type="button" class="tag" data-tag="販売管理">販売管理</button>
-      <button type="button" class="tag" data-tag="請求管理">請求管理</button>
-      <button type="button" class="tag" data-tag="労務管理">労務管理</button>
-      <button type="button" class="tag" data-tag="勤怠">勤怠</button>
-      <button type="button" class="tag" data-tag="年末調整">年末調整</button>
-      <button type="button" class="tag" data-tag="給与明細">給与明細</button>
+      <!-- 3. 調査・地図 -->
+      <div class="tag-category">
+        <span class="tag-cat-label">調査・地図</span>
+        <div class="tag-row">
+          <button type="button" class="tag" data-tag="調査">調査</button>
+          <button type="button" class="tag" data-tag="ハザードマップ">ハザードマップ</button>
+          <button type="button" class="tag" data-tag="防災">防災</button>
+          <button type="button" class="tag" data-tag="地図">地図</button>
+          <button type="button" class="tag" data-tag="公図">公図</button>
+          <button type="button" class="tag" data-tag="登記">登記</button>
+        </div>
+      </div>
 
-      <!-- グループウェア・機能 -->
-      <button type="button" class="tag" data-tag="グループウェア">グループウェア</button>
-      <button type="button" class="tag" data-tag="スケジュール">スケジュール</button>
-      <button type="button" class="tag" data-tag="ワークフロー">ワークフロー</button>
-      <button type="button" class="tag" data-tag="経費精算">経費精算</button>
-      <button type="button" class="tag" data-tag="メール">メール</button>
-      <button type="button" class="tag" data-tag="セキュリティ">セキュリティ</button>
-      <button type="button" class="tag" data-tag="迷惑メール">迷惑メール</button>
-      <button type="button" class="tag" data-tag="Sophos">Sophos</button>
-      <button type="button" class="tag" data-tag="VPN">VPN</button>
+      <!-- 4. 業務・施工・販売・労務 -->
+      <div class="tag-category">
+        <span class="tag-cat-label">業務・施工・労務</span>
+        <div class="tag-row">
+          <button type="button" class="tag" data-tag="業務管理">業務管理</button>
+          <button type="button" class="tag" data-tag="施工管理">施工管理</button>
+          <button type="button" class="tag" data-tag="現場管理">現場管理</button>
+          <button type="button" class="tag" data-tag="販売管理">販売管理</button>
+          <button type="button" class="tag" data-tag="請求管理">請求管理</button>
+          <button type="button" class="tag" data-tag="労務管理">労務管理</button>
+          <button type="button" class="tag" data-tag="勤怠">勤怠</button>
+          <button type="button" class="tag" data-tag="年末調整">年末調整</button>
+          <button type="button" class="tag" data-tag="給与明細">給与明細</button>
+        </div>
+      </div>
 
-      <!-- その他・形式 -->
-      <button type="button" class="tag" data-tag="ジェネレーター">ジェネレーター</button>
-      <button type="button" class="tag" data-tag="HP掲載">HP掲載</button>
-      <button type="button" class="tag" data-tag="マニュアル">マニュアル</button>
-      <button type="button" class="tag" data-tag="Excel">Excel</button>
-      <button type="button" class="tag" data-tag="CSV">CSV</button>
-      <button type="button" class="tag" data-tag="クラウド">クラウド</button>
+      <!-- 5. グループウェア・機能 -->
+      <div class="tag-category">
+        <span class="tag-cat-label">グループウェア</span>
+        <div class="tag-row">
+          <button type="button" class="tag" data-tag="グループウェア">グループウェア</button>
+          <button type="button" class="tag" data-tag="スケジュール">スケジュール</button>
+          <button type="button" class="tag" data-tag="ワークフロー">ワークフロー</button>
+          <button type="button" class="tag" data-tag="経費精算">経費精算</button>
+          <button type="button" class="tag" data-tag="メール">メール</button>
+          <button type="button" class="tag" data-tag="セキュリティ">セキュリティ</button>
+          <button type="button" class="tag" data-tag="迷惑メール">迷惑メール</button>
+          <button type="button" class="tag" data-tag="Sophos">Sophos</button>
+          <button type="button" class="tag" data-tag="VPN">VPN</button>
+        </div>
+      </div>
+
+      <!-- 6. その他・形式 -->
+      <div class="tag-category">
+        <span class="tag-cat-label">その他・形式</span>
+        <div class="tag-row">
+          <button type="button" class="tag" data-tag="ジェネレーター">ジェネレーター</button>
+          <button type="button" class="tag" data-tag="HP掲載">HP掲載</button>
+          <button type="button" class="tag" data-tag="保安規定">保安規定</button>
+          <button type="button" class="tag" data-tag="マニュアル">マニュアル</button>
+          <button type="button" class="tag" data-tag="Excel">Excel</button>
+          <button type="button" class="tag" data-tag="CSV">CSV</button>
+          <button type="button" class="tag" data-tag="クラウド">クラウド</button>
+          <button type="button" class="tag" data-tag="資料">資料</button>
+          <button type="button" class="tag" data-tag="ログイン情報">ログイン情報</button>
+          <button type="button" class="tag" data-tag="那須塩原AS">那須塩原AS</button>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -563,10 +599,10 @@
     </a>
 
     <!-- 20. Sophos User Portal マニュアル [マニュアル] -->
-    <a class="card" href="downloads/sophos_utm_vpn_manual.xlsx" download="sophos_utm_vpn_manual.xlsx" role="link" data-name="Sophos User Portal ログイン方法 VPN手順書" data-tags="Sophos,マニュアル,VPN,セキュリティ,Excel,迷惑メール" data-desc="Sophos User Portal ログイン方法 VPN接続 手順書 マニュアル">
+    <a class="card" href="https://eenergio365-my.sharepoint.com/:x:/g/personal/yamazaki_eenergio365_onmicrosoft_com/IQDETPSq7wewTb1nqPFqFRoYASpCFUbI88R4mUXsWDYilWw?e=nblIKj" target="_blank" rel="noopener noreferrer" role="link" data-name="Sophos User Portal ログイン方法 VPN手順書" data-tags="Sophos,マニュアル,VPN,セキュリティ,Excel,迷惑メール" data-desc="Sophos User Portal ログイン方法 VPN接続 手順書 マニュアル">
       <div class="card-badge-row">
         <span class="badge">マニュアル</span>
-        <span class="updated">最終更新: 2025-12-16</span>
+        <span class="updated">SharePoint</span>
       </div>
       <h3>Sophos User Portal<br>ログイン・VPN接続手順書</h3>
       <p class="headline">Sophos User PortalへのログインとVPN接続手順（Excel）</p>
@@ -578,8 +614,48 @@
         <span class="tag-chip">迷惑メール</span>
       </div>
       <div class="card-footer">
-        <span class="cta">DL
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span class="cta">開く
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+      </div>
+    </a>
+    <!-- 22. 和気SP（保安規定・マニュアル他） [マニュアル] -->
+    <a class="card" href="https://eenergio365-my.sharepoint.com/:f:/g/personal/yamazaki_eenergio365_onmicrosoft_com/IgC_8beZJ0rFRrfhFLMQQe-pAS6CaZw2EEXBPtb0JK3e1wc?e=03XN7Q" target="_blank" rel="noopener noreferrer" role="link" data-name="和気SP 保安規定 マニュアル 資料" data-tags="和気SP,マニュアル,保安規定,SharePoint,資料" data-desc="和気SP 保安規定 マニュアル 各種資料 SharePoint フォルダ">
+      <div class="card-badge-row">
+        <span class="badge">マニュアル</span>
+        <span class="updated">SharePoint</span>
+      </div>
+      <h3>和気SP（保安規定・マニュアル他）</h3>
+      <p class="headline">和気SP関連の資料共有フォルダ</p>
+      <p class="desc line-clamp-3">和気ソーラーパーク発電所の保安規定、各種マニュアル、関連資料などが格納されたSharePointフォルダ。</p>
+      <div class="card-tags">
+        <span class="tag-chip">和気SP</span>
+        <span class="tag-chip">保安規定</span>
+        <span class="tag-chip">マニュアル</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">開く
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+      </div>
+    </a>
+    <!-- 23. 那須塩原AS発電所 ログイン情報 [マニュアル/資料] -->
+    <a class="card" href="https://eenergio365-my.sharepoint.com/:b:/g/personal/yamazaki_eenergio365_onmicrosoft_com/IQD7RdDfCf1cSK0TYn3rkEC_AaTsbJwR9Uam8stpgX7xBMk?e=zaGSGX" target="_blank" rel="noopener noreferrer" role="link" data-name="那須塩原AS発電所 ログイン情報" data-tags="那須塩原AS,ログイン情報,資料,SharePoint,マニュアル" data-desc="那須塩原AS発電所 ログイン情報 ID パスワード 資料 SharePoint">
+      <div class="card-badge-row">
+        <span class="badge">資料</span>
+        <span class="updated">SharePoint</span>
+      </div>
+      <h3>那須塩原AS発電所 ログイン情報</h3>
+      <p class="headline">発電所システムのログイン情報資料</p>
+      <p class="desc line-clamp-3">那須塩原AS発電所に関連するシステムのログインID・パスワード等が記載された資料（閲覧・ダウンロード）。</p>
+      <div class="card-tags">
+        <span class="tag-chip">那須塩原AS</span>
+        <span class="tag-chip">ログイン情報</span>
+        <span class="tag-chip">資料</span>
+      </div>
+      <div class="card-footer">
+        <span class="cta">開く
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </span>
       </div>
     </a>
